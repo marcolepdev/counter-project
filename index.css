@@ -7,7 +7,7 @@
 }
 
 body{
-    background-image: url('/empire_state_building.jpg');
+    background-image: url('../empire_state_building.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
