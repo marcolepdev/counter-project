@@ -32,7 +32,6 @@ incrementTen.addEventListener('click', function(){
 
 resetCounter.addEventListener('click', function(){
         counter = 0;
-        numValue.value = 0;
         int.innerHTML = counter;
     })
 
@@ -52,23 +51,15 @@ decrementTen.addEventListener('click', function(){
 
 // ADD AND REMOVE BUTTONS
 add.addEventListener('click', function(){
-    if (numValue === "" ){
-        alert('Please insert a valid umber!');
-    } else {
     numValue = document.querySelector('#input-number').value;
     num = parseInt(numValue);
     counter +=num;
     int.innerHTML = counter;
-}
 })
 
 remove.addEventListener('click', function(){
-    if (numValue === ""){
-        alert('Please insert a valid number!');
-    } else{
     numValue = document.querySelector('#input-number').value;
     num = parseInt(numValue);
     counter -=num;
     int.innerHTML = counter;
-}
 })
