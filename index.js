@@ -91,7 +91,7 @@ remove.addEventListener('click', function(){
      warningContainer.appendChild(warnPar);
      warningContainer.classList.add('.warn-container');
      warningContainer.style.visibility = "visible";
-     warnPar.textContent ="Please insert a valid number";
+     warnPar.textContent ="Please type a valid number";
      warnPar.style.color ="#FFFFFF";
     } else{
 
