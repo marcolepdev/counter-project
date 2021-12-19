@@ -118,7 +118,7 @@ let invalidChars =[
 ];
 
 numValue.addEventListener("input", function() {
-    this.value = this.value.replace(/[e\+\-\,]/gi, "");
+    this.value = this.value.replace(/[e\+\-\,\.]/gi, "");
   });
 
 numValue.addEventListener("keydown", function(e) {
