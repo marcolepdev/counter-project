@@ -113,7 +113,8 @@ let invalidChars =[
     "-",
     "+",
     "e",
-    ","
+    ",",
+    "."
 ];
 
 numValue.addEventListener("input", function() {
