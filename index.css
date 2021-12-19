@@ -15,6 +15,17 @@ body{
 }
 
 
+/* hiding arrows in input field on Chrome, Safari, Edge and Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+
+
+
 .counter-container{
     width:600px;
     height:690px;
@@ -55,8 +66,11 @@ input{
     background-color: transparent;
     left:120px;
     top:0px;
-    border:1px solid #FFFFFF;
+    border:2px solid #FFFFFF;
     color:#FFFFFF;
+    padding-left: 5px;
+    letter-spacing: 1px;
+
 }
 
 
@@ -65,7 +79,9 @@ input:focus{
 
 }
 input::placeholder{
-    color:darkgrey;
+    color:lightgrey;
+    position: relative;
+
 }
 
 span{
@@ -76,11 +92,13 @@ span{
 #add{
     width:50px;
     height:30px;
+    letter-spacing: 1px;
 }
 
 #remove{
     width:80px;
     height:30px;
+    letter-spacing: 1px;
 }
 
 .button-container{
@@ -141,28 +159,43 @@ button:hover{
 #reset{
     width:100px;
     height:40px;
+    letter-spacing: 1px;
+}
+
+.warn-container{
+    height:30px;
+    position: relative;
+    top:200px;
+    margin: 0 auto;
+    width:300px;
+    color:#FFFFFF;
+}
+
+.warn-container{
+    letter-spacing: 2px;
+}
+
+.warn-container-disappear{
+    display: none;
 }
 
 @media only screen and (max-width:415px){
-    
-    
-    body {
-        
-    background-image: url('./empire_state_building.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 
-}
+    body{
+        background-image: url('./empire_state_building.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
     
-    
+    }
+
     .counter-container{
         width:300px;
         height:600px;
         background-color: rgba(50,50,50,0.6);
         margin:0 auto;
         position: relative;
-        top:50px;
+        top:10px;
         display: flex;
         display: -webkit-flex;
         color:#FFFFFF;
@@ -197,8 +230,10 @@ button:hover{
         left:15px;
         top:0px;
         width:120px;
-        border:1px solid #FFFFFF;
+        border:2px solid #FFFFFF;
         color:#FFFFFF;
+        padding-left: 5px;
+        letter-spacing: 1px;
     }
     
     
@@ -207,7 +242,9 @@ button:hover{
     
     }
     input::placeholder{
-        color:darkgrey;
+        color:lightgrey;
+        left:1px;
+        font-size: 12px;
     }
 
         span{
@@ -217,16 +254,18 @@ button:hover{
 
         #add{
             position: relative;
-            left:15px;
-            width:40px;
+            left:10px;
+            width:50px;
             height:40px;
+            letter-spacing: 2px;
         }
 
         #remove{
             position: relative;
-            left:10px;
+            left:0px;
             height:40px;
-            width:60px;
+            width:70px;
+            letter-spacing: 2px;
         }
 
     .button-container{
@@ -264,5 +303,10 @@ button:hover{
         position: relative;
     width:100px;
     height:40px;
+    }
+
+    .warn-container{
+        top:120px;
+        font-size: 13px;
     }
 }
